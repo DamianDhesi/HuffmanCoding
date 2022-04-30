@@ -1,0 +1,18 @@
+Implemented by Damian Dhesi
+
+Given code with pre-written classes and empty functions, I was tasked in my Python class to implement
+huffman coding for compressing a number of different txt files. Since this was one of the introductory
+programming classes we did not actually shorten each character to a small series of bits. Instead we
+simply printed the huffman code as characters into an outputfile and read the characters back to 
+recreate the file. This ironically lead huffman coding creating larger files instead of smaller ones.
+
+In order to achieve this goal, I used a circular doubly linked list called ordered list that I had 
+implemented previously. This list sorts all characters encountered in ascending order of frequency 
+and sorts in ascending order alphabetically if there is a frequency tie. Then I popped off the 
+characters from the list and built the huffman tree and used it to create the codes for each 
+character. A header was added to the front of the file to help keep track of which characters were 
+used and their frequency.
+
+For decoding I used the header to rebuild the huffman tree and went down the tree until a leaf was 
+found based on the pattern of 1's and 0's. 1's signified going right on the tree while 0's signified
+going left on the tree. 
