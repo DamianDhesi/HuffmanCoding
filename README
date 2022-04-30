@@ -4,7 +4,8 @@ Given code with pre-written classes and empty functions, I was tasked in my Pyth
 huffman coding for compressing a number of different txt files. Since this was one of the introductory
 programming classes we did not actually shorten each character to a small series of bits. Instead we
 simply printed the huffman code as characters into an outputfile and read the characters back to 
-recreate the file. This ironically lead huffman coding creating larger files instead of smaller ones.
+recreate the file. This ironically lead huffman coding  to creating larger files instead of smaller 
+ones.
 
 In order to achieve this goal, I used a circular doubly linked list called ordered list that I had 
 implemented previously. This list sorts all characters encountered in ascending order of frequency 
@@ -15,4 +16,5 @@ used and their frequency.
 
 For decoding I used the header to rebuild the huffman tree and went down the tree until a leaf was 
 found based on the pattern of 1's and 0's. 1's signified going right on the tree while 0's signified
-going left on the tree. 
+going left on the tree. Once a leaf was reached, the char of that leaf was printed and reading the 
+next code would restart from the root of the tree. This continues until the file is recreated.
