@@ -1,11 +1,11 @@
 Implemented by Damian Dhesi
 
-Given code with pre-written classes and empty functions, I was tasked in my Python class to implement
-huffman coding for compressing a number of different txt files. Since this was one of the introductory
-programming classes we did not actually shorten each character to a small series of bits. Instead we
-simply printed the huffman code as characters into an outputfile and read the characters back to 
-recreate the file. This ironically lead huffman coding  to creating larger files instead of smaller 
-ones.
+Given code with pre-written classes, simple test cases, and empty functions, I was tasked in my Python 
+class to implement huffman coding for compressing a number of different txt files. Since this was one 
+of the introductoryprogramming classes we did not actually shorten each character to a small series of 
+bits. Instead wesimply printed the huffman code as characters into an outputfile and read the characters 
+back to recreate the file. This ironically lead huffman coding  to creating larger files instead of 
+smaller ones.
 
 In order to achieve this goal, I used a circular doubly linked list called ordered list that I had 
 implemented previously. This list sorts all characters encountered in ascending order of frequency 
